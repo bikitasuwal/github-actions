@@ -1,0 +1,29 @@
+name: Test Workflow
+
+on:
+ push:
+
+jobs:
+ hello:
+   runs-on: ubuntu-latest
+
+
+   steps :
+     - name: Print Message
+       run: |
+           echo "Hello message"
+           echo "Welcome to Github Actions"
+           echo "Today's Github session"
+         
+
+     - name: Show Current Directory
+       run: pwd
+
+     - name: Checkout Code
+       uses: actions/checkout@v4
+
+     - name: List Files
+       run: ls
+
+     - name: Read File
+       run: cat test.txt
