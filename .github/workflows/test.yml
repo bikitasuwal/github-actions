@@ -26,4 +26,4 @@ jobs:
        run: ls
 
      - name: Read File
-       run: cat test.txt
+       run: cat student.txt
