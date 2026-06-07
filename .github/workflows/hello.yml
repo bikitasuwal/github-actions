@@ -1,4 +1,4 @@
-name: Hello Workflow
+name: Student Workflow
 
 on:
   push:
@@ -8,5 +8,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Show Current Directory
-        run: pwd
+      - uses: actions/checkout@v4
+
+      - name: Show Student File
+        run: cat student.txt
