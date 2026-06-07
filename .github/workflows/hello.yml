@@ -8,8 +8,5 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Print Messages
-        run: |
-          echo "Welcome Students"
-          echo "Learning GitHub Actions"
-          echo "Today's Lab Session"
+      - name: Show Current Directory
+        run: pwd
